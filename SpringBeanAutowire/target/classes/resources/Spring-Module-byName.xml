@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<context:component-scan base-package="com.satish.springbean" />    
+   <!--<bean id="employee" class="com.satish.springbean.beans.EmployeeBean" autowire="byName"> -->  
+   <bean id="employee" class="com.satish.springbean.beans.EmployeeBean" autowire="byName">
+        <property name="fullName" value="Satish R"/>
+<!--         <property name="departmentBean" ref="departmentBean2" /> -->
+    </bean>
+   
+    <bean id="departmentBean" class="com.satish.springbean.beans.DepartmentBean">
+        <property name="name" value="Human Resource - 1" />
+    </bean>
+    
+    <!-- <bean id="departmentBean2" class="com.satish.springbean.beans.DepartmentBean" autowire="byName">
+        <property name="name" value="Human Resource - 2" />
+    </bean> -->
+	
+</beans>
