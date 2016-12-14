@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean id="nameBean" class="com.training.springExample.domain.Name">
+	<!-- 
+		<constructor-arg index="0" value="First"/> 
+		<constructor-arg index="1" value="Last"/> 
+ -->
+		<property name="firstName">
+			<value>Amjad</value>
+		</property>
+
+		<property name="lastName">
+			<value>Hussain</value>
+		</property>
+
+	</bean>
+
+</beans>
